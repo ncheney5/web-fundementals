@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        .fp {
+            width: 150px;
+            height: 150px;
+            border: #e8eced solid 8px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s ease, border 0.3s ease;
+        }
+        .fp:hover {
+            border: #000000 solid 8px;
+            transform: scale(1.6);
+        }
+        .apostle {
+            width: 100px;
+            height: 100px;
+            border: #e8eced solid 8px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s ease, border 0.3s ease;
+        }
+        .apostle:hover {
+            border: #000000 solid 8px;
+            transform: scale(1.6);
+        }
+         body {
+            background: #e8eced;
+         }
+            #fpgrid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                justify-items: center;
+                width: fit-content;
+                margin: 0 auto;
+            }
+            #agrid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                justify-items: center;
+                width: fit-content;
+                margin: 0 auto;
+            }
+            .card {
+                background-image: url('images/christus.webp');
+                background-size: cover;
+                background-position: center;
+                border-radius: 20px;
+                padding: 30px;
+                max-width: 900px;
+                margin: 40px auto;
+            }
+             h1, h2 {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #e8eced
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+    <h1>First Presidency</h1>
+    <div id ="fpgrid">
+    <img src="images/eyring.webp" alt="Apostle Eyring" class ="fp">
+    <img src="images/oaks.webp" alt="Apostle Oaks" class ="fp">
+    <img src="images/christofferson.webp" alt="Apostle Christofferson" class ="fp">
+    </div>
+    <h2>Quorum of the Twelve Apostles</h2>
+    <div id="agrid">
+    <img src="images/uchtdorf.webp" alt="Apostle Uchdorf" class="apostle">
+    <img src="images/bednar.webp" alt="Apostle Bednar" class="apostle">
+    <img src="images/cook.webp" alt="Apostle Cook" class="apostle">
+    <img src="images/anderson.webp" alt="Apostle Anderson" class="apostle">
+    <img src="images/rasband.webp" alt="Apostle Rasband" class="apostle">
+    <img src="images/stevenson.webp" alt="Apostle Stevenson" class="apostle">
+    <img src="images/renlund.webp" alt="Apostle Renlund" class="apostle">
+    <img src="images/gong.webp" alt="Apostle Gong" class="apostle">
+    <img src="images/soares.webp" alt="Apostle Soares" class="apostle">
+    <img src="images/kearon.webp" alt="Apostle Kearon" class="apostle">
+    <img src="images/causse.webp" alt="Apostle Caussse" class="apostle">
+    <img src="images/gilbert.webp" alt="Apostle Gilbert" class="apostle">
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Speaker</th>
+              <th>Title</th>
+              <th>Link</th>
+              <th>Location</th>
+              <th>Year</th>
+              <th>Up Votes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Elder David A. Bednar</td>
+              <td>Seek Learning by Faith</td>
+              <td><a href="https://www.byui.edu/speeches/devotionals/david-a-bednar/seek-learning-by-faith-september-29-2006">Watch</a></td>
+              <td>BYU-Idaho Center</td>
+              <td>2006</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Selana Robins</td>
+              <td>Spiritual Discernment</td>
+              <td><a href="https://www.byui.edu/speeches/devotionals/selena-robins/spiritual-discernment-may-26-2026">Watch</a></td>
+              <td>BYU-Idaho Center</td>
+              <td>2026</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Elder Jeffrey R. Holland</td>
+              <td>However Long and Hard the Road</td>
+              <td><a href="https://www.byui.edu/speeches/devotionals/jeffrey-r-holland/how-ever-long-and-hard-the-road-may-19-2020">Watch</a></td>
+              <td>BYU-Idaho Center</td>
+              <td>2020</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Add Your Favorite Devotional</h2>
+        <form>
+          <div>
+            <label for="speaker">Speaker:</label>
+            <input type="text" id="speaker" name="speaker" required />
+          </div>
+          <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div>
+            <label for="link">Link:</label>
+            <input type="url" id="link" name="link" required />
+          </div>
+          <div>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required />
+          </div>
+          <div>
+          <label for="year">Year:</label>
+          <input type="number" id="year" name="year" required />
+          </div>
+          <button type="submit">Add Devotional</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

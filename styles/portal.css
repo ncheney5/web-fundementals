@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+@font-face {
+    font-family: 'Canterbury';
+    src: url('../fonts/Canterbury.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OldEnglishFive';
+    src: url('../fonts/OldEnglishFive.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CeltiCons';
+    src: url('../fonts/CeltiCons.ttf') format('truetype');
+}
+
+:root {
+    --cave-night:  #141c16;
+    --deep-moss:   #2e4d35;
+    --deep-water:  #1a4d7a;
+    --wet-stone:   #9ab0b8;
+    --forge-glow:  #e86010;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cave-night);
+    color: var(--wet-stone);
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+    font-family: 'Canterbury', serif;
+    color: var(--forge-glow);
+}
+
+h2, h3 {
+    font-family: 'OldEnglishFive', serif;
+    color: var(--wet-stone);
+}
+
+header {
+    background-color: var(--deep-moss);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--forge-glow);
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 10;
+    position: relative;
+}
+
+.logo {
+    width: 60px;
+
+}
+
+#main-nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--deep-moss);
+}
+
+#main-nav a {
+    color: var(--wet-stone);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-family: 'Canterbury', serif;
+    font-size: 2rem;
+}
+
+#main-nav a:hover {
+    color: var(--forge-glow);
+    background-color: var(--cave-night);
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card {
+    background-color: var(--deep-moss);
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid var(--deep-water);
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
+.card h2 {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+}
+
+.card p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.card a {
+    color: var(--forge-glow);
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+}
+
+#hero-img {
+    width: 100%;
+    display: block;
+    margin-top: -200px;
+}
+
+#hero-msg {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+#hero h1 {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    margin-bottom: 4rem;
+    color: var(--wet-stone);
+}
+
+.btn {
+    background-color: var(--forge-glow);
+    color: white;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: var(--deep-water);
+}
+
+footer {
+    background-color: var(--deep-moss);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    border-top: 2px solid var(--forge-glow);
+}
+
+footer a {
+    color: var(--wet-stone);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--forge-glow);
+}
