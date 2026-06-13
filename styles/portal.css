@@ -187,3 +187,157 @@ footer a {
 footer a:hover {
     color: var(--forge-glow);
 }
+
+#about-hero {
+    position: relative;
+    text-align: center;
+}
+
+#about-hero-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#about-hero-msg {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+#about-hero-msg h1 {
+    font-size: 3rem;
+    color: var(--forge-glow);
+    text-shadow: 2px 2px 8px black;
+}
+
+#about-hero-msg p {
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+#about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#profile-img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--forge-glow);
+    box-shadow: 0 0 12px var(--forge-glow);
+}
+
+#about-text h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--forge-glow);
+}
+
+#about-text p {
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+#about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about-text ul li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--deep-moss);
+    color: var(--wet-stone);
+}
+
+#about-text ul li::before {
+    content: "⚒ ";
+    color: var(--forge-glow);
+}
+
+#about-text form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+#about-text input,
+#about-text textarea {
+    background: var(--deep-moss);
+    border: 1px solid var(--deep-water);
+    color: var(--wet-stone);
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-family: 'EB Garamond', serif;
+}
+
+#about-text button {
+    background: var(--forge-glow);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Canterbury', serif;
+    font-size: 1rem;
+}
+
+#about-text button:hover {
+    background: var(--deep-water);
+}
+
+#ice-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    align-items: start;
+}
+
+#ice-hero-img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--forge-glow);
+    box-shadow: 0 0 12px var(--forge-glow);
+    position: sticky;
+    top: 2rem;
+}
+
+#ice-content {
+    padding: 2rem;
+}
+
+#ice-content h1 {
+    color: var(--forge-glow);
+    margin-bottom: 0.5rem;
+}
+
+#ice-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#ice-content li {
+    background: var(--deep-moss);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--forge-glow);
+}
+
+#ice-content li a {
+    color: var(--forge-glow);
+    text-decoration: none;
+}
+
+#ice-content li a:hover {
+    text-decoration: underline;
+}
